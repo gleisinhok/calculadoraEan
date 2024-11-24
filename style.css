@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(46, 0, 88);
+    color: rgb(211, 211, 211);
+    display: flex;
+}
+
+.container {
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header {
+    margin-bottom: 36px;
+}
+header h1 {
+    font-size: 40px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+form {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.resultado {
+    text-align: center;
+    margin-top: 18px;
+    margin-bottom: 36px;
+}
+
+.resultado span {
+    font-size: 18px;
+    padding: 8px;
+    background-color: rgb(211, 211, 211);
+    color: rgb(31, 31, 31);
+}
+
+form input {
+    font-size: 18px;
+    padding: 8px;
+    border: none;
+    border-bottom: 1px solid rgb(211, 211, 211);
+}
+
+form button {
+    font-size: 18px;
+    color: rgb(31, 31, 31);
+    background-color: rgb(211, 211, 211);
+    padding: 8px;
+    margin-left: 12px;
+    cursor: pointer;
+    border: none;
+    font-weight: bold;
+}
+
+.descricao {
+    max-width: 660px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.descricao p {
+    font-size: 16px;
+}
+
+input[type="number"]::-webkit-inner-spin-button, 
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+}

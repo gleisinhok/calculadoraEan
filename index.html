@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora EAN</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Calculadora EAN-13</h1>
+        </header>
+    
+        <h2>Cálculo código EAN-13</h2>
+        <form id="calculadora">
+            <input type="text" id="numeroDigitado" placeholder="Insira 12 dígitos" maxlength="12" minlength="12">
+            <button type="submit">Calcular</button>
+            <button type="reset">Limpar</button> <br>
+            <button type="button">Gerar números</button>
+        </form>
+
+        <div class="resultado">
+            <span id="resultadoFinal">Resultado</span>
+        </div>
+
+        <div class="descricao">
+            <p>
+                O que é um dígito verificador? O último dígito de um número de código de barras de varejo EAN-13 ou UPC-A é chamado de dígito verificador. O dígito verificador é calculado a partir de todos os outros números no código de barras. Basta digitar os 12 primeiros dígitos de um número EAN-13 no campo abaixo e a calculadora informará automaticamente o dígito verificador.
+            </p>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
