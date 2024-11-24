@@ -1,5 +1,6 @@
 const calculadora = document.getElementById('calculadora');
 const reset = document.getElementById('calculadora');
+const gerarNumeros = document.getElementById('gerarNumeros');
 
 function calculoDigitoVerificador(numeroDigitado) {
     let digito = numeroDigitado.split('').map(Number)
@@ -26,7 +27,7 @@ calculadora.addEventListener('submit', function(e) {
 
     const numeroDigitado = String(document.getElementById('numeroDigitado').value);
 
-    digitoVerificador = calculoDigitoVerificador(numeroDigitado)
+    const digitoVerificador = calculoDigitoVerificador(numeroDigitado)
 
     const resultado = numeroDigitado.concat(digitoVerificador);
 
@@ -35,4 +36,14 @@ calculadora.addEventListener('submit', function(e) {
 
 reset.addEventListener('reset', function(a) {
     document.getElementById("resultadoFinal").textContent = "Resultado";
+})
+
+gerarNumeros.addEventListener('click', function(){
+    const numeroAleatorio = Math.floor(Math.random() * 10 ** 9).toString().padStart(9, '0');
+    const numeroGerado = "789" + numeroAleatorio;
+    const digitoVerificador = calculoDigitoVerificador(numeroGerado)
+    const resultado = numeroGerado.concat(digitoVerificador);
+
+    document.getElementById('resultadoFinal').textContent = resultado;
+
 })
